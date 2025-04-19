@@ -3,109 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Jesús Carrilero</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <script defer src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <title>Jesús Carrilero | Desarrollador Full-Stack</title>
+    <meta name="description" content="Portafolio profesional de Jesús Carrilero, Desarrollador Full-Stack especializado en React, Vue, Angular y TypeScript">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#testimonials">Testimonios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><img src="espanol.png" alt="ES" class="language-icon" onclick="switchLanguage('es')">
-                    <img src="ingles.png" alt="EN" class="language-icon" onclick="switchLanguage('en')"></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <img src="profile.jpeg" alt="Jesús Carrilero" id="profile-image">
-            <h1>Jesús Carrilero</h1>
-            <p id="hero-description">Desarrollador Web | Freelancer</p>
-        </section>
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p id="about-text">Soy un apasionado desarrollador web con experiencia en crear, mantener y diseñar sitios web dinámicos y responsivos. Mi objetivo es transformar ideas en proyectos digitales atractivos, ayudando a las empresas a alcanzar sus metas con soluciones tecnológicas innovadoras.</p>
-        </section>
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Desarrollo Frontend: HTML, CSS, JavaScript, React</li>
-                <li>Desarrollo Backend: Node.js, Express, Python, Django</li>
-                <li>Base de Datos: MongoDB, MySQL</li>
-                <li>Control de Versiones: Git, GitHub</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <img src="project1.jpg" alt="Culinary King" class="project-logo">
-                <h3>E-commerce Platform: Culinary King</h3>
-                <p>Desarrollé una plataforma de comercio electrónico con una colección de productos alimenticios, presentada con características de diseño modernas y CSS avanzado.</p>
-                <a href="https://github.com/chusete289/Culinary-King-e-commerce-website-master" target="_blank">Ver proyecto</a>
-            </div>
-            <div class="project">
-                <img src="project2.jpg" alt="TravelLite" class="project-logo">
-                <h3>Project Management Application: TravelLite</h3>
-                <p>Creé una aplicación web para una agencia de viajes, utilizando Django y MySQL, con un diseño de Materialize CSS.</p>
-                <a href="https://github.com/chusete289/TravelLite-master.git" target="_blank">Ver proyecto</a>
-            </div>
-            <div class="project">
-                <img src="project3.jpg" alt="Adventour" class="project-logo">
-                <h3>Data Analysis Tool: Adventour</h3>
-                <p>Desarrollé una herramienta de análisis de datos utilizando HTML, CSS y JavaScript, facilitando la visualización y el análisis de datos para la toma de decisiones estratégicas.</p>
-                <a href="https://github.com/chusete289/adventour-tourism-website-master.git" target="_blank">Ver proyecto</a>
-            </div>
-        </section>
-        <section id="carousel">
-            <h2>Galería de Proyectos</h2>
-            <div class="carousel">
-                <div class="carousel-slide" data-index="0">
-                    <a href="Captura.JPG" data-lightbox="project-gallery"><img src="Captura.JPG" alt="Proyecto 1"></a>
-                    <a href="Captura(1).JPG" data-lightbox="project-gallery"><img src="Captura(1).JPG" alt="Proyecto 2"></a>
-                    <a href="Captura(2).JPG" data-lightbox="project-gallery"><img src="Captura(2).JPG" alt="Proyecto 3"></a>
-                    <a href="explore.png" data-lightbox="project-gallery"><img src="explore.png" alt="Proyecto 4"></a>
-                    <a href="flights.png" data-lightbox="project-gallery"><img src="flights.png" alt="Proyecto 5"></a>
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;"></button>
-            </div>
-        </section>
-        <section id="testimonials">
-            <h2>Testimonios</h2>
-            <div class="testimonial">
-                <img src="cliente1.jpg" alt="Cliente 1" class="testimonial-image">
-                <p>"Jesús es un desarrollador increíble. Su trabajo ha sido esencial para el éxito de nuestro proyecto."</p>
-                <p><strong>- María González, CEO de TechCorp</strong></p>
-            </div>
-            <div class="testimonial">
-                <img src="cliente2.jpg" alt="Cliente 2" class="testimonial-image">
-                <p>"La calidad y atención al detalle que Jesús ofrece es excepcional. Lo recomendaría sin dudar."</p>
-                <p><strong>- Juan Pérez, Gerente de Proyecto en Innovate Ltd.</strong></p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form class="contact-form">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message" required></textarea>
-    <button type="submit">Enviar</button>
-</form>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Jesús Carrilero. Todos los derechos reservados.</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="name-highlight">Jesús</span> Carrilero
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" data-lang="nav-home">Inicio</a></li>
+                    <li class="nav-item"><a href="proyectos.html" class="nav-link" data-lang="nav-projects">Proyectos</a></li>
+                    <li class="nav-item"><a href="experiencia.html" class="nav-link" data-lang="nav-experience">Experiencia</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link" data-lang="nav-contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">
+                        <img src="assets/img/es-flag.png" alt="Español" class="lang-flag">
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <img src="assets/img/en-flag.png" alt="English" class="lang-flag">
+                    </button>
+                </div>
+                <button class="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting" data-lang="hero-greeting">Hola, soy</span>
+                    <span class="name">Jesús Carrilero</span>
+                    <span class="title-animation">
+                        <span class="title-item" data-lang="hero-title-1">Desarrollador Full-Stack</span>
+                        <span class="title-item" data-lang="hero-title-2">Experto en React</span>
+                        <span class="title-item" data-lang="hero-title-3">Especialista en TypeScript</span>
+                    </span>
+                </h1>
+                <p class="hero-description" data-lang="hero-description">
+                    Desarrollador Full-Stack con amplia experiencia en React, Vue, Angular y TypeScript.
+                    Especializado en la creación de aplicaciones escalables y optimizadas mediante la aplicación
+                    de las mejores prácticas (SOLID, TDD, DDD) y trabajo en entornos ágiles.
+                </p>
+                <div class="hero-cta">
+                    <a href="proyectos.html" class="btn btn-primary" data-lang="hero-cta-projects">Ver Proyectos</a>
+                    <a href="contacto.html" class="btn btn-outline" data-lang="hero-cta-contact">Contactar</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/jesus-carrilero-b7a061227/" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:jesuscarrilero3@gmail.com" class="social-link email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+34616460352" class="social-link phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="profile.jpeg" alt="Jesús Carrilero" class="profile-img">
+                    <div class="orbit">
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon"><i class="fab fa-vuejs"></i></div>
+                        <div class="tech-icon"><i class="fab fa-angular"></i></div>
+                        <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span data-lang="scroll-down">Desplázate para ver más</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-lang="skills-title">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title" data-lang="skills-frontend">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4 class="skill-name">React</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <h4 class="skill-name">Vue</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                            <h4 class="skill-name">Angular</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <h4 class="skill-name">TypeScript</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title" data-lang="skills-backend">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <h4 class="skill-name">Node.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4 class="skill-name">.NET (C#)</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <h4 class="skill-name">Express</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4 class="skill-name">Python</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title" data-lang="skills-database">Bases de Datos</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4 class="skill-name">PostgreSQL</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4 class="skill-name">SQL Server</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4 class="skill-name">MongoDB</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4 class="skill-name">Redis</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title" data-lang="skills-devops">DevOps & Cloud</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <h4 class="skill-name">AWS</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4 class="skill-name">Azure</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <h4 class="skill-name">Docker</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                            <h4 class="skill-name">Kubernetes</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-lang="experience-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2024 - 2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title" data-lang="job-title-walkiria">Desarrollador Full-Stack</h3>
+                        <h4 class="timeline-company">Walkiria Apps</h4>
+                        <p class="timeline-location">Albacete</p>
+                        <ul class="timeline-responsibilities">
+                            <li data-lang="walkiria-resp-1">Desarrollé interfaces dinámicas utilizando React, Vue y Angular, asegurando un diseño responsivo y una excelente experiencia de usuario.</li>
+                            <li data-lang="walkiria-resp-2">Implementé soluciones de back-end con Node.js y .NET (C#), integrando APIs RESTful y microservicios.</li>
+                            <li data-lang="walkiria-resp-3">Gestioné y optimicé bases de datos SQL/NoSQL (PostgreSQL, MongoDB, Redis).</li>
+                            <li data-lang="walkiria-resp-4">Automatizé los despliegues con herramientas CI/CD (GitHub Actions, Azure DevOps) e implementé pruebas automatizadas (Jest, Cypress).</li>
+                            <li data-lang="walkiria-resp-5">Colaboré en equipos ágiles (Scrum, Kanban) utilizando herramientas como Jira para la planificación y seguimiento de tareas.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>2007 - presente</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title" data-lang="job-title-air-force">Desarrollador Web</h3>
+                        <h4 class="timeline-company">Ejército del Aire y del Espacio</h4>
+                        <p class="timeline-location">Albacete, España</p>
+                        <ul class="timeline-responsibilities">
+                            <li data-lang="air-resp-1">Coordiné y optimicé los procesos tecnológicos y logísticos internos.</li>
+                            <li data-lang="air-resp-2">Desarrollé y mantuve software de gestión operativa, mejorando continuamente la eficiencia y la seguridad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h2 class="section-title" data-lang="education-title">Educación</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3 class="education-degree" data-lang="education-degree-1">Desarrollo de aplicaciones Full-Stack y web | DAM + DAW</h3>
+                        <h4 class="education-institution">UNIVERSAE</h4>
+                        <p class="education-period">2023 - 2025</p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3 class="education-degree" data-lang="education-degree-2">Competencias Digitales</h3>
+                        <h4 class="education-institution">Gnos</h4>
+                        <p class="education-period">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-lang="cta-title">¿Interesado en trabajar juntos?</h2>
+                <p class="cta-description" data-lang="cta-description">Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme para discutir cómo puedo aportar valor a tu proyecto o empresa.</p>
+                <a href="contacto.html" class="btn btn-cta" data-lang="cta-button">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="name-highlight">Jesús</span> Carrilero
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/jesus-carrilero-b7a061227/" target="_blank" class="footer-social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="footer-social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:jesuscarrilero3@gmail.com" class="footer-social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+34616460352" class="footer-social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Albacete 02008, España</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+34 616 460 352</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>jesuscarrilero3@gmail.com</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="index.html" data-lang="nav-home">Inicio</a></li>
+                    <li><a href="proyectos.html" data-lang="nav-projects">Proyectos</a></li>
+                    <li><a href="experiencia.html" data-lang="nav-experience">Experiencia</a></li>
+                    <li><a href="contacto.html" data-lang="nav-contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2025</span> Jesús Carrilero. <span data-lang="footer-rights">Todos los derechos reservados</span></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/darkmode.js"></script>
 </body>
 </html>
