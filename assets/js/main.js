@@ -6,16 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (mobileMenuBtn && mainNav) {
             mobileMenuBtn.addEventListener('click', () => {
-                mainNav.classList.toggle('hidden');
-                mainNav.classList.toggle('flex');
-                mainNav.classList.toggle('flex-col');
-                mainNav.classList.toggle('absolute');
-                mainNav.classList.toggle('top-16');
-                mainNav.classList.toggle('left-0');
-                mainNav.classList.toggle('w-full');
-                mainNav.classList.toggle('bg-white');
-                mainNav.classList.toggle('dark:bg-gray-800');
-                mainNav.classList.toggle('p-4');
+                mainNav.classList.toggle('active');
             });
         }
 
@@ -28,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
                 }
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
             });
         });
 
@@ -36,11 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (backToTop) {
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 300) {
-                    backToTop.classList.remove('hidden');
-                    backToTop.classList.add('show');
+                    backToTop.style.display = 'block';
                 } else {
-                    backToTop.classList.add('hidden');
-                    backToTop.classList.remove('show');
+                    backToTop.style.display = 'none';
                 }
             });
 
@@ -60,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Project Details Buttons (Temporary Alert)
-        document.querySelectorAll('.project-card .btn-primary').forEach(button => {
+        document.querySelectorAll('.project-btn').forEach(button => {
             button.addEventListener('click', () => {
                 alert('Funcionalidad de "Ver Detalles" en desarrollo. Pronto se abrirá un modal con más información.');
             });

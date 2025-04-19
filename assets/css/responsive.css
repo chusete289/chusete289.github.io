@@ -1,31 +1,44 @@
-/* Responsive Styles */
-
-/* Mobile Devices (up to 640px) */
-@media (max-width: 640px) {
-    .profile-container {
-        width: 200px !important;
-        height: 200px !important;
-    }
-
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
     .main-nav {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark .main-nav {
+        background-color: #374151;
+    }
+
+    .main-nav.active {
+        display: flex;
     }
 
     .mobile-menu-btn {
-        display: block !important;
+        display: block;
     }
 
-    .hero-section h1 {
-        font-size: 2rem !important;
+    .hero-section {
+        padding-top: 100px;
     }
 
-    .hero-section p {
-        font-size: 1rem !important;
+    .profile-container {
+        width: 200px;
+        height: 200px;
     }
 
-    .project-card {
-        width: 100% !important;
-        margin: 0 auto 1rem auto;
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
     }
 
     .experience-item {
@@ -33,46 +46,23 @@
         text-align: center;
     }
 
-    .experience-item img {
-        margin-bottom: 1rem;
+    .experience-img {
+        margin: 0 auto 20px;
     }
 }
 
-/* Tablets (641px to 1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
+/* Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
     .profile-container {
-        width: 280px !important;
-        height: 280px !important;
+        width: 250px;
+        height: 250px;
     }
 
-    .hero-section h1 {
-        font-size: 3rem !important;
+    .hero-title {
+        font-size: 40px;
     }
 
-    .project-card {
-        width: 48% !important;
-    }
-
-    .main-nav {
-        display: flex !important;
-    }
-
-    .mobile-menu-btn {
-        display: none !important;
-    }
-}
-
-/* Desktops (1025px and up) */
-@media (min-width: 1025px) {
-    .main-nav {
-        display: flex !important;
-    }
-
-    .mobile-menu-btn {
-        display: none !important;
-    }
-
-    .project-card {
-        width: 32% !important;
+    .hero-subtitle {
+        font-size: 20px;
     }
 }
