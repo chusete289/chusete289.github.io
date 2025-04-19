@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Carrilero | Desarrollador Full-Stack</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Jesús Carrilero | Portafolio</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/chusete289/chusete289.github.io/main/assets/css/main.css">
-	<link rel="stylesheet" href="https://raw.githubusercontent.com/chusete289/chusete289.github.io/main/assets/css/animations.css">
-	<link rel="stylesheet" href="https://raw.githubusercontent.com/chusete289/chusete289.github.io/main/assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -22,103 +17,41 @@
         <div class="container">
             <h1 class="logo">Jesús Carrilero</h1>
             <nav class="main-nav">
-                <a href="#home" class="nav-link" data-lang="nav-home">Inicio</a>
-                <a href="#projects" class="nav-link" data-lang="nav-projects">Proyectos</a>
-                <a href="#experience" class="nav-link" data-lang="nav-experience">Experiencia</a>
-                <a href="#contact" class="nav-link" data-lang="nav-contact">Contacto</a>
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contacto</a>
             </nav>
-            <div class="header-controls">
-                <div class="language-selector">
-                    <button class="lang-btn" data-lang="es">
-                        <img src="assets/img/es-flag.png" alt="Español" class="lang-flag">
-                    </button>
-                    <button class="lang-btn" data-lang="en">
-                        <img src="assets/img/en-flag.png" alt="English" class="lang-flag">
-                    </button>
-                </div>
-                <button class="dark-mode-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="profile-container">
-                <img src="profile.jpeg" alt="Jesús Carrilero" class="profile-img">
-                <div class="orbit">
-                    <div class="tech-icon tech-icon-react"><i class="fab fa-react"></i></div>
-                    <div class="tech-icon tech-icon-vue delay-100"><i class="fab fa-vuejs"></i></div>
-                    <div class="tech-icon tech-icon-angular delay-200"><i class="fab fa-angular"></i></div>
-                    <div class="tech-icon tech-icon-node delay-300"><i class="fab fa-node-js"></i></div>
-                </div>
-            </div>
-            <h1 class="hero-title" data-lang="hero-title">Hola, soy Jesús Carrilero</h1>
-            <p class="hero-subtitle" data-lang="hero-subtitle">Desarrollador Full-Stack | Apasionado por la Tecnología</p>
-            <a href="#projects" class="btn btn-primary" data-lang="hero-cta">Ver Proyectos</a>
+            <img src="assets/img/profile.jpeg" alt="Jesús Carrilero" class="profile-img">
+            <h1 class="hero-title">Hola, soy Jesús Carrilero</h1>
+            <p class="hero-subtitle">Desarrollador Full-Stack</p>
+            <a href="#projects" class="btn">Ver Proyectos</a>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title" data-lang="projects-title">Mis Proyectos</h2>
+            <h2 class="section-title">Proyectos</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="assets/img/project1.jpg" alt="Proyecto 1" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title" data-lang="project-1-title">Proyecto 1</h3>
-                        <p class="project-desc" data-lang="project-1-desc">Una aplicación web moderna construida con React y Node.js.</p>
-                        <button class="btn btn-primary project-btn" data-lang="project-details">Ver Detalles</button>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=180&q=80" alt="Proyecto 1" class="project-img">
+					<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=180&q=80" alt="Proyecto 2" class="project-img">
+                    <h3 class="project-title">Proyecto 1</h3>
+                    <p class="project-desc">Una aplicación web construida con React y Node.js.</p>
                 </div>
                 <div class="project-card">
                     <img src="assets/img/project2.jpg" alt="Proyecto 2" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title" data-lang="project-2-title">Proyecto 2</h3>
-                        <p class="project-desc" data-lang="project-2-desc">Una plataforma de comercio electrónico con Vue.js y Firebase.</p>
-                        <button class="btn btn-primary project-btn" data-lang="project-details">Ver Detalles</button>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/img/project3.jpg" alt="Proyecto 3" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title" data-lang="project-3-title">Proyecto 3</h3>
-                        <p class="project-desc" data-lang="project-3-desc">Un sistema de gestión de tareas con Angular y MongoDB.</p>
-                        <button class="btn btn-primary project-btn" data-lang="project-details">Ver Detalles</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <h2 class="section-title" data-lang="experience-title">Experiencia</h2>
-            <div class="experience-list">
-                <div class="experience-item">
-                    <img src="assets/img/project1.jpg" alt="Tech Solutions" class="experience-img">
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-lang="experience-1-title">Desarrollador Full-Stack</h3>
-                        <p class="experience-company" data-lang="experience-1-company">Tech Solutions</p>
-                        <p class="experience-date" data-lang="experience-1-date">2022 - Presente</p>
-                        <p class="experience-desc" data-lang="experience-1-desc">Desarrollo de aplicaciones web escalables con React, Node.js y MongoDB.</p>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <img src="assets/img/project2.jpg" alt="Web Innovate" class="experience-img">
-                    <div class="experience-content">
-                        <h3 class="experience-title" data-lang="experience-2-title">Desarrollador Frontend</h3>
-                        <p class="experience-company" data-lang="experience-2-company">Web Innovate</p>
-                        <p class="experience-date" data-lang="experience-2-date">2020 - 2022</p>
-                        <p class="experience-desc" data-lang="experience-2-desc">Creación de interfaces de usuario interactivas con Vue.js y Tailwind CSS.</p>
-                    </div>
+                    <h3 class="project-title">Proyecto 2</h3>
+                    <p class="project-desc">Una plataforma de comercio electrónico con Vue.js.</p>
                 </div>
             </div>
         </div>
@@ -127,46 +60,27 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title" data-lang="contact-title">Contacto</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name" data-lang="contact-name">Nombre</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email" data-lang="contact-email">Correo Electrónico</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" data-lang="contact-message">Mensaje</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" data-lang="contact-submit">Enviar Mensaje</button>
-            </form>
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Albacete, España</p>
+                <p><i class="fas fa-phone"></i> +34 616 460 352</p>
+                <p><i class="fas fa-envelope"></i> tuemail@ejemplo.com</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Jesús Carrilero. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Jesús Carrilero. Todos los derechos reservados.</p>
             <div class="social-links">
                 <a href="https://github.com/chusete289" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- JS Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- JS -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/language.js"></script>
-    <script src="assets/js/darkmode.js"></script>
 </body>
 </html>
