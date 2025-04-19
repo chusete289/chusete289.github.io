@@ -1,0 +1,78 @@
+/* Responsive Styles */
+
+/* Mobile Devices (up to 640px) */
+@media (max-width: 640px) {
+    .profile-container {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-section p {
+        font-size: 1rem !important;
+    }
+
+    .project-card {
+        width: 100% !important;
+        margin: 0 auto 1rem auto;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-item img {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tablets (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .profile-container {
+        width: 280px !important;
+        height: 280px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem !important;
+    }
+
+    .project-card {
+        width: 48% !important;
+    }
+
+    .main-nav {
+        display: flex !important;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+    .main-nav {
+        display: flex !important;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .project-card {
+        width: 32% !important;
+    }
+}

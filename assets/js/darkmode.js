@@ -1,12 +1,21 @@
-const themeToggle = document.querySelector('.theme-toggle');
-const currentTheme = localStorage.getItem('theme') || 'light';
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.querySelector('.dark-mode-toggle');
+    const html = document.documentElement;
 
-if (currentTheme === 'dark') {
-    document.documentElement.classList.add('dark');
-}
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        html.classList.add('dark');
+        darkModeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    }
 
-themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
+    darkModeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        if (html.classList.contains('dark')) {
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.querySelector('i').classList.replace('fa-sun', 'fa-moon');
+        }
+    });
 });
