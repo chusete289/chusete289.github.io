@@ -14,7 +14,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("i2ZN_PVAyRnXqdzK6"); // Reemplaza con tu Public Key de EmailJS
+            emailjs.init("i2ZN_PVAyRnXqdzK6");
         })();
     </script>
     <!-- CSS -->
@@ -29,15 +29,27 @@
                     <img src="assets/img/logo.png" alt="Jesús Carrilero Logo" class="logo">
                 </a>
                 <img src="assets/img/rotulo.png" alt="Jesús Carrilero Rótulo" class="rotulo-img">
+
+
             </div>
             <div class="nav-container">
                 <nav class="main-nav">
                     <a href="#home" class="nav-link" data-lang-es="Inicio" data-lang-en="Home">Inicio</a>
                     <a href="#about" class="nav-link" data-lang-es="Sobre Mí" data-lang-en="About">Sobre Mí</a>
-                    <a href="#education" class="nav-link" data-lang-es="Educación" data-lang-en="Education">Educación</a>
-                    <a href="#certifications" class="nav-link" data-lang-es="Certificaciones" data-lang-en="Certifications">Certificaciones</a>
-                    <a href="#skills" class="nav-link" data-lang-es="Habilidades" data-lang-en="Skills">Habilidades</a>
-                    <a href="#experience" class="nav-link" data-lang-es="Experiencia" data-lang-en="Experience">Experiencia</a>
+                    <div class="nav-dropdown">
+                        <a href="#education" class="nav-link" data-lang-es="Educación" data-lang-en="Education">Educación</a>
+                        <div class="dropdown-content">
+                            <a href="#education" class="dropdown-link" data-lang-es="Formación" data-lang-en="Education">Formación</a>
+                            <a href="#certifications" class="dropdown-link" data-lang-es="Certificaciones" data-lang-en="Certifications">Certificaciones</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#skills" class="nav-link" data-lang-es="Perfil" data-lang-en="Profile">Perfil</a>
+                        <div class="dropdown-content">
+                            <a href="#skills" class="dropdown-link" data-lang-es="Habilidades" data-lang-en="Skills">Habilidades</a>
+                            <a href="#experience" class="dropdown-link" data-lang-es="Experiencia" data-lang-en="Experience">Experiencia</a>
+                        </div>
+                    </div>
                     <a href="#projects" class="nav-link" data-lang-es="Proyectos" data-lang-en="Projects">Proyectos</a>
                     <a href="#contact" class="nav-link" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
                 </nav>
@@ -78,8 +90,8 @@
         <div class="container">
             <h2 class="section-title fade-in" data-lang-es="Sobre Mí" data-lang-en="About Me">Sobre Mí</h2>
             <div class="about-content fade-in">
-                <p data-lang-es="Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales. También he explorado la intersección entre tecnología y trading, aplicando mis conocimientos en automatización para optimizar estrategias de trading." data-lang-en="I am a Full-Stack Developer with over 5 years of experience in building modern and scalable web applications. I am passionate about solving complex problems, learning new technologies, and creating innovative solutions that positively impact users. I specialize in technologies like React, Node.js, and MongoDB, and have experience working in agile teams in professional environments. Additionally, I am an expert in automation and AI tools, using platforms like n8n and Make to streamline workflows, and I have implemented AI solutions with Python and tools like ChatGPT to enhance business processes. I have also explored the intersection of technology and trading, applying my automation skills to optimize trading strategies.">
-                    Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales. También he explorado la intersección entre tecnología y trading, aplicando mis conocimientos en automatización para optimizar estrategias de trading.
+                <p data-lang-es="Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales. Mi experiencia incluye el uso avanzado de Python para scraping y automatización de datos, especialmente en proyectos para Walkiria Apps. También he explorado la intersección entre tecnología y trading, aplicando mis conocimientos en automatización para optimizar estrategias de trading." data-lang-en="I am a Full-Stack Developer with over 5 years of experience in building modern and scalable web applications. I am passionate about solving complex problems, learning new technologies, and creating innovative solutions that positively impact users. I specialize in technologies like React, Node.js, and MongoDB, and have experience working in agile teams in professional environments. Additionally, I am an expert in automation and AI tools, using platforms like n8n and Make to streamline workflows, and I have implemented AI solutions with Python and tools like ChatGPT to enhance business processes. My experience includes advanced use of Python for scraping and data automation, particularly in projects for Walkiria Apps. I have also explored the intersection of technology and trading, applying my automation skills to optimize trading strategies.">
+                    Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales. Mi experiencia incluye el uso avanzado de Python para scraping y automatización de datos, especialmente en proyectos para Walkiria Apps. También he explorado la intersección entre tecnología y trading, aplicando mis conocimientos en automatización para optimizar estrategias de trading.
                 </p>
             </div>
         </div>
@@ -91,7 +103,7 @@
             <h2 class="section-title fade-in" data-lang-es="Educación" data-lang-en="Education">Educación</h2>
             <div class="education-list">
                 <div class="education-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Universae" class="education-img">
+                    <img src="assets/img/universae.webp" alt="Universae" class="education-img">
                     <div class="education-content">
                         <h3 class="education-title" data-lang-es="Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Desarrollo de Aplicaciones Web" data-lang-en="Higher Vocational Training in Multiplatform Application Development and Web Application Development">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Desarrollo de Aplicaciones Web</h3>
                         <p class="education-institution" data-lang-es="Universae, Albacete" data-lang-en="Universae, Albacete">Universae, Albacete</p>
@@ -108,7 +120,7 @@
             <h2 class="section-title fade-in" data-lang-es="Certificaciones" data-lang-en="Certifications">Certificaciones</h2>
             <div class="certifications-list">
                 <div class="certification-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1666875753105-c43a6fb62548?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Tradeando.net" class="certification-img">
+                    <img src="assets/img/tradeando.png" alt="Tradeando.net" class="certification-img">
                     <div class="certification-content">
                         <h3 class="certification-title" data-lang-es="Curso de Swing Trading" data-lang-en="Swing Trading Course">Curso de Swing Trading</h3>
                         <p class="certification-institution" data-lang-es="Tradeando.net" data-lang-en="Tradeando.net">Tradeando.net</p>
@@ -117,7 +129,7 @@
                     </div>
                 </div>
                 <div class="certification-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1666875753105-c43a6fb62548?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Tradeando.net" class="certification-img">
+                    <img src="assets/img/tradeando.png" alt="Tradeando.net" class="certification-img">
                     <div class="certification-content">
                         <h3 class="certification-title" data-lang-es="Curso de Trading Intradía" data-lang-en="Intraday Trading Course">Curso de Trading Intradía</h3>
                         <p class="certification-institution" data-lang-es="Tradeando.net" data-lang-en="Tradeando.net">Tradeando.net</p>
@@ -168,7 +180,7 @@
                 </div>
                 <div class="skill-card fade-in">
                     <i class="fab fa-python"></i>
-                    <h3>Python</h3>
+                    <h3>Python (Scraping)</h3>
                 </div>
                 <div class="skill-card fade-in">
                     <i class="fas fa-robot"></i>
@@ -188,24 +200,24 @@
             <h2 class="section-title fade-in" data-lang-es="Experiencia" data-lang-en="Experience">Experiencia</h2>
             <div class="experience-list">
                 <div class="experience-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Tech Solutions" class="experience-img">
+                    <img src="assets/img/walkiria.png" alt="Walkiria Apps" class="experience-img">
                     <div class="experience-content">
                         <h3 class="experience-title" data-lang-es="Desarrollador Full-Stack" data-lang-en="Full-Stack Developer">Desarrollador Full-Stack</h3>
-                        <p class="experience-company" data-lang-es="Tech Solutions" data-lang-en="Tech Solutions">Tech Solutions</p>
-                        <p class="experience-date" data-lang-es="2020 - Presente" data-lang-en="2020 - Present">2020 - Presente</p>
-                        <p class="experience-desc" data-lang-es="Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Implementé automatizaciones con n8n y Make para mejorar procesos internos, y utilicé herramientas de IA como ChatGPT para optimizar flujos de trabajo." data-lang-en="Led the development of scalable web applications using React and Node.js, integrating APIs and optimizing performance. Implemented automations with n8n and Make to improve internal processes, and used AI tools like ChatGPT to optimize workflows.">
-                            Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Implementé automatizaciones con n8n y Make para mejorar procesos internos, y utilicé herramientas de IA como ChatGPT para optimizar flujos de trabajo.
+                        <p class="experience-company" data-lang-es="Walkiria Apps" data-lang-en="Walkiria Apps">Walkiria Apps</p>
+                        <p class="experience-date" data-lang-es="2022 - Presente" data-lang-en="2022 - Present">2022 - Presente</p>
+                        <p class="experience-desc" data-lang-es="Desarrollé aplicaciones web escalables utilizando React y Node.js, con un enfoque especial en automatización y scraping de datos con Python. Implementé soluciones de automatización con n8n y Make para optimizar procesos internos, y utilicé herramientas de IA como ChatGPT para mejorar flujos de trabajo." data-lang-en="Developed scalable web applications using React and Node.js, with a special focus on automation and data scraping with Python. Implemented automation solutions with n8n and Make to optimize internal processes, and used AI tools like ChatGPT to enhance workflows.">
+                            Desarrollé aplicaciones web escalables utilizando React y Node.js, con un enfoque especial en automatización y scraping de datos con Python. Implementé soluciones de automatización con n8n y Make para optimizar procesos internos, y utilicé herramientas de IA como ChatGPT para mejorar flujos de trabajo.
                         </p>
                     </div>
                 </div>
                 <div class="experience-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Web Innovate" class="experience-img">
+                    <img src="assets/img/ea.jpeg" alt="Ejército del Aire y del Espacio" class="experience-img">
                     <div class="experience-content">
-                        <h3 class="experience-title" data-lang-es="Desarrollador Frontend" data-lang-en="Frontend Developer">Desarrollador Frontend</h3>
-                        <p class="experience-company" data-lang-es="Web Innovate" data-lang-en="Web Innovate">Web Innovate</p>
-                        <p class="experience-date" data-lang-es="2018 - 2020" data-lang-en="2018 - 2020">2018 - 2020</p>
-                        <p class="experience-desc" data-lang-es="Desarrollé interfaces de usuario interactivas con Vue.js y optimicé la experiencia del usuario mediante pruebas A/B. Colaboré en la integración de servicios backend con REST APIs." data-lang-en="Developed interactive user interfaces with Vue.js and optimized user experience through A/B testing. Collaborated on integrating backend services with REST APIs.">
-                            Desarrollé interfaces de usuario interactivas con Vue.js y optimicé la experiencia del usuario mediante pruebas A/B. Colaboré en la integración de servicios backend con REST APIs.
+                        <h3 class="experience-title" data-lang-es="Técnico de Sistemas" data-lang-en="Systems Technician">Técnico de Sistemas</h3>
+                        <p class="experience-company" data-lang-es="Ejército del Aire y del Espacio" data-lang-en="Spanish Air and Space Force">Ejército del Aire y del Espacio</p>
+                        <p class="experience-date" data-lang-es="2020 - 2022" data-lang-en="2020 - 2022">2020 - 2022</p>
+                        <p class="experience-desc" data-lang-es="Mantenimiento y gestión de sistemas informáticos, asegurando la operatividad de redes y servidores. Colaboré en la implementación de soluciones de seguridad y automatización básica de procesos." data-lang-en="Maintenance and management of IT systems, ensuring the operability of networks and servers. Collaborated on the implementation of security solutions and basic process automation.">
+                            Mantenimiento y gestión de sistemas informáticos, asegurando la operatividad de redes y servidores. Colaboré en la implementación de soluciones de seguridad y automatización básica de procesos.
                         </p>
                     </div>
                 </div>
