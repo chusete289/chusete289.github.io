@@ -60,6 +60,7 @@ body.dark .header {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-left: -10px; /* Mueve el logo y rótulo más a la izquierda */
 }
 
 .logo {
@@ -70,9 +71,23 @@ body.dark .header {
     max-height: 40px;
 }
 
+.nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .main-nav {
     display: flex;
     gap: 25px;
+    background-color: rgba(0, 123, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+body.dark .main-nav {
+    background-color: rgba(102, 176, 255, 0.1);
 }
 
 .nav-link {
@@ -113,6 +128,7 @@ body.dark .nav-link::after {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-right: -10px; /* Mueve los controles más a la derecha */
 }
 
 .language-selector {
@@ -326,6 +342,81 @@ body.dark .education-institution {
 
 body.dark .education-date {
     color: #888;
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+body.dark .certifications-section {
+    background-color: #2c2c2c;
+}
+
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.certification-item {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .certification-item {
+    background-color: #3a3a3a;
+}
+
+.certification-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.certification-content {
+    flex: 1;
+}
+
+.certification-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.certification-institution {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+body.dark .certification-institution {
+    color: #b0b0b0;
+}
+
+.certification-date {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+body.dark .certification-date {
+    color: #888;
+}
+
+.certification-desc {
+    color: #666;
+}
+
+body.dark .certification-desc {
+    color: #b0b0b0;
 }
 
 /* Skills Section */
@@ -719,6 +810,21 @@ body.dark .back-to-top {
         display: block;
     }
 
+    .header .container {
+        flex-wrap: wrap;
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .main-nav {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
     .hero-section {
         padding-top: 100px;
     }
@@ -739,6 +845,7 @@ body.dark .back-to-top {
     .logo-container {
         flex-direction: column;
         gap: 5px;
+        margin-left: 0;
     }
 
     .logo,
@@ -746,14 +853,20 @@ body.dark .back-to-top {
         max-height: 30px;
     }
 
+    .header-controls {
+        margin-right: 0;
+    }
+
     .experience-item,
-    .education-item {
+    .education-item,
+    .certification-item {
         flex-direction: column;
         text-align: center;
     }
 
     .experience-img,
-    .education-img {
+    .education-img,
+    .certification-img {
         margin: 0 auto 20px;
     }
 

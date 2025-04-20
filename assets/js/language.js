@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Dispatch language change event for CV link update
                 const event = new CustomEvent('languageChange', { detail: lang });
                 document.dispatchEvent(event);
+
+                // Update HTML lang attribute
+                document.documentElement.lang = lang;
             }
         });
     });
@@ -27,12 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (text) {
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                     element.placeholder = text;
-                } else if (element.tagName === 'H3' && element.closest('.skill-card')) {
-                    // Skip skill-card h3 elements with icons
-                    const skillText = element.getAttribute(`data-lang-${lang}`);
-                    if (skillText) {
-                        element.textContent = skillText;
-                    }
                 } else {
                     element.textContent = text;
                 }
