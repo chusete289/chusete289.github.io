@@ -54,18 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Contact Form (Simulated)
-    const contactForm = document.querySelector('.contact-form');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Mensaje enviado! Esta es una demo.');
-        contactForm.reset();
+    // Update CV Download Link Based on Language
+    const downloadCvBtn = document.querySelector('#download-cv');
+    const updateCvLink = (lang) => {
+        downloadCvBtn.href = `assets/docs/cv-${lang}.pdf`;
+    };
+
+    // Listen for language change
+    document.addEventListener('languageChange', (e) => {
+        updateCvLink(e.detail);
     });
 
-    // Download CV (Simulated)
-    const downloadCvBtn = document.querySelector('.download-cv');
-    downloadCvBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Descarga de CV simulada. En un entorno real, aquí se descargaría tu CV.');
-    });
+    // Set initial CV link based on saved language
+    const savedLang = localStorage.getItem('language') || 'es';
+    updateCvLink(savedLang);
 });
+
+// EmailJS Send Email Function
+function sendEmail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    emailjs.send("service_404uyeg", "template_tmrd12h", {
+        from_name: name,
+        from_email: email,
+        message: message,
+        to_email: "jesuscarrilero3@gmail.com"
+    })
+    .then(() => {
+        alert('Mensaje enviado con éxito!');
+        document.querySelector('.contact-form').reset();
+    }, (error) => {
+        alert('Error al enviar el mensaje: ' + JSON.stringify(error));
+    });
+}

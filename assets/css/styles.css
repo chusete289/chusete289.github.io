@@ -56,8 +56,18 @@ body.dark .header {
     padding: 15px 20px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo {
     height: 40px;
+}
+
+.rotulo-img {
+    max-height: 40px;
 }
 
 .main-nav {
@@ -179,11 +189,6 @@ body.dark .mobile-menu-btn {
     z-index: 1;
 }
 
-.rotulo-img {
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
 .profile-img {
     width: 220px;
     height: 220px;
@@ -255,6 +260,72 @@ body.dark .about-section {
 
 body.dark .about-content p {
     color: #b0b0b0;
+}
+
+/* Education Section */
+.education-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+body.dark .education-section {
+    background-color: #1a1a1a;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .education-item {
+    background-color: #3a3a3a;
+}
+
+.education-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.education-institution {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+body.dark .education-institution {
+    color: #b0b0b0;
+}
+
+.education-date {
+    font-size: 16px;
+    color: #999;
+}
+
+body.dark .education-date {
+    color: #888;
 }
 
 /* Skills Section */
@@ -665,16 +736,24 @@ body.dark .back-to-top {
         height: 180px;
     }
 
-    .rotulo-img {
-        max-width: 200px;
+    .logo-container {
+        flex-direction: column;
+        gap: 5px;
     }
 
-    .experience-item {
+    .logo,
+    .rotulo-img {
+        max-height: 30px;
+    }
+
+    .experience-item,
+    .education-item {
         flex-direction: column;
         text-align: center;
     }
 
-    .experience-img {
+    .experience-img,
+    .education-img {
         margin: 0 auto 20px;
     }
 

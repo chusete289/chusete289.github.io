@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("i2ZN_PVAyRnXqdzK6"); // Reemplaza con tu Public Key de EmailJS
+        })();
+    </script>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -17,12 +24,16 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <a href="#home">
-                <img src="assets/img/logo.png" alt="Jesús Carrilero Logo" class="logo">
-            </a>
+            <div class="logo-container">
+                <a href="#home">
+                    <img src="assets/img/logo.png" alt="Jesús Carrilero Logo" class="logo">
+                </a>
+                <img src="assets/img/rotulo.png" alt="Jesús Carrilero Rótulo" class="rotulo-img">
+            </div>
             <nav class="main-nav">
                 <a href="#home" class="nav-link" data-lang-es="Inicio" data-lang-en="Home">Inicio</a>
                 <a href="#about" class="nav-link" data-lang-es="Sobre Mí" data-lang-en="About">Sobre Mí</a>
+                <a href="#education" class="nav-link" data-lang-es="Educación" data-lang-en="Education">Educación</a>
                 <a href="#skills" class="nav-link" data-lang-es="Habilidades" data-lang-en="Skills">Habilidades</a>
                 <a href="#experience" class="nav-link" data-lang-es="Experiencia" data-lang-en="Experience">Experiencia</a>
                 <a href="#projects" class="nav-link" data-lang-es="Proyectos" data-lang-en="Projects">Proyectos</a>
@@ -51,10 +62,9 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <img src="assets/img/rotulo.png" alt="Jesús Carrilero Rótulo" class="rotulo-img fade-in">
-                <img src="assets/img/profile.jpeg" alt="Jesús Carrilero" class="profile-img fade-in">
+                <img src="assets/img/profile.jpg" alt="Jesús Carrilero" class="profile-img fade-in">
                 <h1 class="hero-title fade-in" data-lang-es="Hola, soy Jesús Carrilero" data-lang-en="Hi, I'm Jesús Carrilero">Hola, soy Jesús Carrilero</h1>
-                <p class="hero-subtitle fade-in" data-lang-es="Desarrollador Full-Stack | Apasionado por la Tecnología e Innovación" data-lang-en="Full-Stack Developer | Passionate about Technology and Innovation">Desarrollador Full-Stack | Apasionado por la Tecnología e Innovación</p>
+                <p class="hero-subtitle fade-in" data-lang-es="Desarrollador Full-Stack | Experto en Automatizaciones e IA" data-lang-en="Full-Stack Developer | Expert in Automation and AI">Desarrollador Full-Stack | Experto en Automatizaciones e IA</p>
                 <a href="#projects" class="btn btn-primary fade-in" data-lang-es="Ver Proyectos" data-lang-en="View Projects">Ver Proyectos</a>
             </div>
         </div>
@@ -65,9 +75,26 @@
         <div class="container">
             <h2 class="section-title fade-in" data-lang-es="Sobre Mí" data-lang-en="About Me">Sobre Mí</h2>
             <div class="about-content fade-in">
-                <p data-lang-es="Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales." data-lang-en="I am a Full-Stack Developer with over 5 years of experience in building modern and scalable web applications. I am passionate about solving complex problems, learning new technologies, and creating innovative solutions that positively impact users. I specialize in technologies like React, Node.js, and MongoDB, and have experience working in agile teams in professional environments.">
-                    Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales.
+                <p data-lang-es="Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales." data-lang-en="I am a Full-Stack Developer with over 5 years of experience in building modern and scalable web applications. I am passionate about solving complex problems, learning new technologies, and creating innovative solutions that positively impact users. I specialize in technologies like React, Node.js, and MongoDB, and have experience working in agile teams in professional environments. Additionally, I am an expert in automation and AI tools, using platforms like n8n and Make to streamline workflows, and I have implemented AI solutions with Python and tools like ChatGPT to enhance business processes.">
+                    Soy un desarrollador Full-Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web modernas y escalables. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y crear soluciones innovadoras que impacten positivamente a los usuarios. Estoy especializado en tecnologías como React, Node.js y MongoDB, y tengo experiencia trabajando en equipos ágiles en entornos profesionales. Además, soy experto en automatizaciones y herramientas de IA, utilizando herramientas como n8n y Make para optimizar flujos de trabajo, y he implementado soluciones de IA con Python y herramientas como ChatGPT para mejorar procesos empresariales.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-lang-es="Educación" data-lang-en="Education">Educación</h2>
+            <div class="education-list">
+                <div class="education-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Universidad de Castilla-La Mancha" class="education-img">
+                    <div class="education-content">
+                        <h3 class="education-title" data-lang-es="Grado en Ingeniería Informática" data-lang-en="Bachelor's Degree in Computer Engineering">Grado en Ingeniería Informática</h3>
+                        <p class="education-institution">Universidad de Castilla-La Mancha, Albacete</p>
+                        <p class="education-date">2014 - 2018</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -109,6 +136,18 @@
                     <i class="fab fa-docker"></i>
                     <h3>Docker</h3>
                 </div>
+                <div class="skill-card fade-in">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-lang-es="Automatizaciones (n8n, Make)" data-lang-en="Automation (n8n, Make)">Automatizaciones (n8n, Make)</h3>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-brain"></i>
+                    <h3 data-lang-es="Herramientas de IA" data-lang-en="AI Tools">Herramientas de IA</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -124,8 +163,8 @@
                         <h3 class="experience-title" data-lang-es="Desarrollador Full-Stack" data-lang-en="Full-Stack Developer">Desarrollador Full-Stack</h3>
                         <p class="experience-company">Tech Solutions</p>
                         <p class="experience-date">2020 - Presente</p>
-                        <p class="experience-desc" data-lang-es="Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Trabajé en proyectos con metodologías ágiles, colaborando con equipos multidisciplinarios." data-lang-en="Led the development of scalable web applications using React and Node.js, integrating APIs and optimizing performance. Worked on projects using agile methodologies, collaborating with multidisciplinary teams.">
-                            Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Trabajé en proyectos con metodologías ágiles, colaborando con equipos multidisciplinarios.
+                        <p class="experience-desc" data-lang-es="Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Implementé automatizaciones con n8n y Make para mejorar procesos internos, y utilicé herramientas de IA como ChatGPT para optimizar flujos de trabajo." data-lang-en="Led the development of scalable web applications using React and Node.js, integrating APIs and optimizing performance. Implemented automations with n8n and Make to improve internal processes, and used AI tools like ChatGPT to optimize workflows.">
+                            Lideré el desarrollo de aplicaciones web escalables utilizando React y Node.js, integrando APIs y optimizando el rendimiento. Implementé automatizaciones con n8n y Make para mejorar procesos internos, y utilicé herramientas de IA como ChatGPT para optimizar flujos de trabajo.
                         </p>
                     </div>
                 </div>
@@ -191,7 +230,7 @@
                 <div class="contact-info fade-in">
                     <p><i class="fas fa-map-marker-alt"></i> Albacete, España</p>
                     <p><i class="fas fa-phone"></i> +34 616 460 352</p>
-                    <p><i class="fas fa-envelope"></i> tuemail@ejemplo.com</p>
+                    <p><i class="fas fa-envelope"></i> jesuscarrilero3@gmail.com</p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></p>
                 </div>
                 <div class="contact-form fade-in">
@@ -207,10 +246,10 @@
                         <label for="message" data-lang-es="Mensaje" data-lang-en="Message">Mensaje</label>
                         <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
                     </div>
-                    <button class="btn btn-primary" data-lang-es="Enviar Mensaje" data-lang-en="Send Message">Enviar Mensaje</button>
+                    <button type="button" onclick="sendEmail()" class="btn btn-primary" data-lang-es="Enviar Mensaje" data-lang-en="Send Message">Enviar Mensaje</button>
                 </div>
             </div>
-            <a href="#" class="btn btn-secondary download-cv fade-in" data-lang-es="Descargar CV" data-lang-en="Download CV">Descargar CV</a>
+            <a href="assets/docs/cv-es.pdf" id="download-cv" class="btn btn-secondary download-cv fade-in" data-lang-es="Descargar CV" data-lang-en="Download CV" download>Descargar CV</a>
         </div>
     </section>
 
