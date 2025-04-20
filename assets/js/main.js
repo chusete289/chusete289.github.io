@@ -53,4 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Contact Form (Simulated)
+    const contactForm = document.querySelector('.contact-form');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Mensaje enviado! Esta es una demo.');
+        contactForm.reset();
+    });
+
+    // Download CV (Simulated)
+    const downloadCvBtn = document.querySelector('.download-cv');
+    downloadCvBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Descarga de CV simulada. En un entorno real, aquí se descargaría tu CV.');
+    });
 });
